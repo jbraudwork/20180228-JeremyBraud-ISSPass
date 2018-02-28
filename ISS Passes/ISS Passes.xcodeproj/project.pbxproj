@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1626561089AF02A436AD8081 /* Pods_ISS_PassesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4839728237BF7A58C21AA48 /* Pods_ISS_PassesUITests.framework */; };
+		79037DB9203B524500A781BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037DB8203B524500A781BF /* AppDelegate.swift */; };
+		79037DBB203B524500A781BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037DBA203B524500A781BF /* ViewController.swift */; };
+		79037DBE203B524500A781BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79037DBC203B524500A781BF /* Main.storyboard */; };
+		79037DC1203B524500A781BF /* ISS_Passes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79037DBF203B524500A781BF /* ISS_Passes.xcdatamodeld */; };
+		79037DC3203B524500A781BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79037DC2203B524500A781BF /* Assets.xcassets */; };
+		79037DC6203B524500A781BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79037DC4203B524500A781BF /* LaunchScreen.storyboard */; };
+		79037DD1203B524500A781BF /* ISS_PassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037DD0203B524500A781BF /* ISS_PassesTests.swift */; };
+		79037DDC203B524500A781BF /* ISS_PassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037DDB203B524500A781BF /* ISS_PassesUITests.swift */; };
+		79037DEA203B60B900A781BF /* ServiceCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037DE9203B60B900A781BF /* ServiceCalls.swift */; };
+		79037E07203B6AAC00A781BF /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79037DFA203B6A9700A781BF /* AFNetworking.framework */; };
+		79037E09203B6B1300A781BF /* PassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037E08203B6B1300A781BF /* PassModel.swift */; };
+		79037E0B203B703E00A781BF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037E0A203B703E00A781BF /* Global.swift */; };
+		79037E15203B741400A781BF /* PassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79037E14203B741400A781BF /* PassTableViewCell.swift */; };
+		846786B2872ADA0B15FEDABC /* Pods_ISS_Passes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE6E397D24A1A84424134AB /* Pods_ISS_Passes.framework */; };
+		88D0FA845CC025339BA4D22D /* Pods_ISS_PassesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FA71C9DB9A6CBF478BFDC8 /* Pods_ISS_PassesTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79037DCD203B524500A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DAD203B524500A781BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79037DB4203B524500A781BF;
+			remoteInfo = "ISS Passes";
+		};
+		79037DD8203B524500A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DAD203B524500A781BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79037DB4203B524500A781BF;
+			remoteInfo = "ISS Passes";
+		};
+		79037DF9203B6A9700A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522391BBF104D00859F49;
+			remoteInfo = "AFNetworking iOS";
+		};
+		79037DFB203B6A9700A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522651BBF129200859F49;
+			remoteInfo = "AFNetworking watchOS";
+		};
+		79037DFD203B6A9700A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522771BBF136400859F49;
+			remoteInfo = "AFNetworking macOS";
+		};
+		79037DFF203B6A9700A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2987B0A51BC408A200179A4C;
+			remoteInfo = "AFNetworking tvOS";
+		};
+		79037E01203B6A9700A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 298D7C3B1BC2C79500FD3B3E;
+			remoteInfo = "AFNetworking iOS Tests";
+		};
+		79037E03203B6A9700A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 298D7C4A1BC2C7B200FD3B3E;
+			remoteInfo = "AFNetworking macOS Tests";
+		};
+		79037E05203B6A9700A781BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2987B0AE1BC408A200179A4C;
+			remoteInfo = "AFNetworking tvOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DE6E397D24A1A84424134AB /* Pods_ISS_Passes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISS_Passes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E64790CD9B1BA46762B5D4 /* Pods-ISS PassesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISS PassesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISS PassesUITests/Pods-ISS PassesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37E18202022D08E202CE4149 /* Pods-ISS PassesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISS PassesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISS PassesTests/Pods-ISS PassesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		53B3F50C45B8E9B9ACEBCAE3 /* Pods-ISS PassesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISS PassesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISS PassesTests/Pods-ISS PassesTests.release.xcconfig"; sourceTree = "<group>"; };
+		79037DB5203B524500A781BF /* ISS Passes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ISS Passes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79037DB8203B524500A781BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79037DBA203B524500A781BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79037DBD203B524500A781BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79037DC0203B524500A781BF /* ISS_Passes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ISS_Passes.xcdatamodel; sourceTree = "<group>"; };
+		79037DC2203B524500A781BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79037DC5203B524500A781BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79037DC7203B524500A781BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79037DCC203B524500A781BF /* ISS PassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ISS PassesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79037DD0203B524500A781BF /* ISS_PassesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISS_PassesTests.swift; sourceTree = "<group>"; };
+		79037DD2203B524500A781BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79037DD7203B524500A781BF /* ISS PassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ISS PassesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79037DDB203B524500A781BF /* ISS_PassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISS_PassesUITests.swift; sourceTree = "<group>"; };
+		79037DDD203B524500A781BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79037DE9203B60B900A781BF /* ServiceCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCalls.swift; sourceTree = "<group>"; };
+		79037DEB203B694F00A781BF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Pods/AFNetworking/README.md; sourceTree = "<group>"; };
+		79037DED203B6A6800A781BF /* AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = "../../Downloads/AFNetworking-master/Framework/AFNetworking.h"; sourceTree = "<group>"; };
+		79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AFNetworking.xcodeproj; path = "../../Downloads/AFNetworking-master/AFNetworking.xcodeproj"; sourceTree = "<group>"; };
+		79037E08203B6B1300A781BF /* PassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassModel.swift; sourceTree = "<group>"; };
+		79037E0A203B703E00A781BF /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		79037E14203B741400A781BF /* PassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassTableViewCell.swift; sourceTree = "<group>"; };
+		82FA71C9DB9A6CBF478BFDC8 /* Pods_ISS_PassesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISS_PassesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982AE132FBB0616A786FBC66 /* Pods-ISS Passes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISS Passes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISS Passes/Pods-ISS Passes.debug.xcconfig"; sourceTree = "<group>"; };
+		B82EDEB9E99D5E6920FB4BE5 /* Pods-ISS PassesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISS PassesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISS PassesUITests/Pods-ISS PassesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E09BBFC7E9A46BF3E6C00264 /* Pods-ISS Passes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISS Passes.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISS Passes/Pods-ISS Passes.release.xcconfig"; sourceTree = "<group>"; };
+		F4839728237BF7A58C21AA48 /* Pods_ISS_PassesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISS_PassesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79037DB2203B524500A781BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79037E07203B6AAC00A781BF /* AFNetworking.framework in Frameworks */,
+				846786B2872ADA0B15FEDABC /* Pods_ISS_Passes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79037DC9203B524500A781BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D0FA845CC025339BA4D22D /* Pods_ISS_PassesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79037DD4203B524500A781BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1626561089AF02A436AD8081 /* Pods_ISS_PassesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		233EF66D8E79F34A8721F230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				982AE132FBB0616A786FBC66 /* Pods-ISS Passes.debug.xcconfig */,
+				E09BBFC7E9A46BF3E6C00264 /* Pods-ISS Passes.release.xcconfig */,
+				37E18202022D08E202CE4149 /* Pods-ISS PassesTests.debug.xcconfig */,
+				53B3F50C45B8E9B9ACEBCAE3 /* Pods-ISS PassesTests.release.xcconfig */,
+				26E64790CD9B1BA46762B5D4 /* Pods-ISS PassesUITests.debug.xcconfig */,
+				B82EDEB9E99D5E6920FB4BE5 /* Pods-ISS PassesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79037DAC203B524500A781BF = {
+			isa = PBXGroup;
+			children = (
+				79037DB7203B524500A781BF /* ISS Passes */,
+				79037DCF203B524500A781BF /* ISS PassesTests */,
+				79037DDA203B524500A781BF /* ISS PassesUITests */,
+				79037DB6203B524500A781BF /* Products */,
+				233EF66D8E79F34A8721F230 /* Pods */,
+				83D2E20CEC3125770DFA1DFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79037DB6203B524500A781BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79037DB5203B524500A781BF /* ISS Passes.app */,
+				79037DCC203B524500A781BF /* ISS PassesTests.xctest */,
+				79037DD7203B524500A781BF /* ISS PassesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79037DB7203B524500A781BF /* ISS Passes */ = {
+			isa = PBXGroup;
+			children = (
+				79037DB8203B524500A781BF /* AppDelegate.swift */,
+				79037DBA203B524500A781BF /* ViewController.swift */,
+				79037DBC203B524500A781BF /* Main.storyboard */,
+				79037DC2203B524500A781BF /* Assets.xcassets */,
+				79037DC4203B524500A781BF /* LaunchScreen.storyboard */,
+				79037DC7203B524500A781BF /* Info.plist */,
+				79037DBF203B524500A781BF /* ISS_Passes.xcdatamodeld */,
+				79037DE9203B60B900A781BF /* ServiceCalls.swift */,
+				79037E08203B6B1300A781BF /* PassModel.swift */,
+				79037E0A203B703E00A781BF /* Global.swift */,
+				79037E14203B741400A781BF /* PassTableViewCell.swift */,
+			);
+			path = "ISS Passes";
+			sourceTree = "<group>";
+		};
+		79037DCF203B524500A781BF /* ISS PassesTests */ = {
+			isa = PBXGroup;
+			children = (
+				79037DD0203B524500A781BF /* ISS_PassesTests.swift */,
+				79037DD2203B524500A781BF /* Info.plist */,
+			);
+			path = "ISS PassesTests";
+			sourceTree = "<group>";
+		};
+		79037DDA203B524500A781BF /* ISS PassesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79037DDB203B524500A781BF /* ISS_PassesUITests.swift */,
+				79037DDD203B524500A781BF /* Info.plist */,
+			);
+			path = "ISS PassesUITests";
+			sourceTree = "<group>";
+		};
+		79037DF0203B6A9700A781BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79037DFA203B6A9700A781BF /* AFNetworking.framework */,
+				79037DFC203B6A9700A781BF /* AFNetworking.framework */,
+				79037DFE203B6A9700A781BF /* AFNetworking.framework */,
+				79037E00203B6A9700A781BF /* AFNetworking.framework */,
+				79037E02203B6A9700A781BF /* AFNetworking iOS Tests.xctest */,
+				79037E04203B6A9700A781BF /* AFNetworking macOS Tests.xctest */,
+				79037E06203B6A9700A781BF /* AFNetworking tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83D2E20CEC3125770DFA1DFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */,
+				79037DED203B6A6800A781BF /* AFNetworking.h */,
+				79037DEB203B694F00A781BF /* README.md */,
+				0DE6E397D24A1A84424134AB /* Pods_ISS_Passes.framework */,
+				82FA71C9DB9A6CBF478BFDC8 /* Pods_ISS_PassesTests.framework */,
+				F4839728237BF7A58C21AA48 /* Pods_ISS_PassesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79037DB4203B524500A781BF /* ISS Passes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79037DE0203B524500A781BF /* Build configuration list for PBXNativeTarget "ISS Passes" */;
+			buildPhases = (
+				D1255666DC373A7A153986CF /* [CP] Check Pods Manifest.lock */,
+				79037DB1203B524500A781BF /* Sources */,
+				79037DB2203B524500A781BF /* Frameworks */,
+				79037DB3203B524500A781BF /* Resources */,
+				DB1BFAFED82D6632D9507EDF /* [CP] Embed Pods Frameworks */,
+				111815C9B8EE649BF203FD40 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ISS Passes";
+			productName = "ISS Passes";
+			productReference = 79037DB5203B524500A781BF /* ISS Passes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79037DCB203B524500A781BF /* ISS PassesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79037DE3203B524500A781BF /* Build configuration list for PBXNativeTarget "ISS PassesTests" */;
+			buildPhases = (
+				734A693FB8B005594591C86B /* [CP] Check Pods Manifest.lock */,
+				79037DC8203B524500A781BF /* Sources */,
+				79037DC9203B524500A781BF /* Frameworks */,
+				79037DCA203B524500A781BF /* Resources */,
+				661FDC083D930226BC64EC06 /* [CP] Embed Pods Frameworks */,
+				DD706CFD1F206CBB31ABD1AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79037DCE203B524500A781BF /* PBXTargetDependency */,
+			);
+			name = "ISS PassesTests";
+			productName = "ISS PassesTests";
+			productReference = 79037DCC203B524500A781BF /* ISS PassesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79037DD6203B524500A781BF /* ISS PassesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79037DE6203B524500A781BF /* Build configuration list for PBXNativeTarget "ISS PassesUITests" */;
+			buildPhases = (
+				775182661E8DB264797C3B72 /* [CP] Check Pods Manifest.lock */,
+				79037DD3203B524500A781BF /* Sources */,
+				79037DD4203B524500A781BF /* Frameworks */,
+				79037DD5203B524500A781BF /* Resources */,
+				40F7D981118B28ACDB7A63ED /* [CP] Embed Pods Frameworks */,
+				63559E26AE14DE0F017791DE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79037DD9203B524500A781BF /* PBXTargetDependency */,
+			);
+			name = "ISS PassesUITests";
+			productName = "ISS PassesUITests";
+			productReference = 79037DD7203B524500A781BF /* ISS PassesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79037DAD203B524500A781BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = JPMC;
+				TargetAttributes = {
+					79037DB4203B524500A781BF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					79037DCB203B524500A781BF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79037DB4203B524500A781BF;
+					};
+					79037DD6203B524500A781BF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79037DB4203B524500A781BF;
+					};
+				};
+			};
+			buildConfigurationList = 79037DB0203B524500A781BF /* Build configuration list for PBXProject "ISS Passes" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79037DAC203B524500A781BF;
+			productRefGroup = 79037DB6203B524500A781BF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 79037DF0203B6A9700A781BF /* Products */;
+					ProjectRef = 79037DEF203B6A9700A781BF /* AFNetworking.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				79037DB4203B524500A781BF /* ISS Passes */,
+				79037DCB203B524500A781BF /* ISS PassesTests */,
+				79037DD6203B524500A781BF /* ISS PassesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		79037DFA203B6A9700A781BF /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 79037DF9203B6A9700A781BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79037DFC203B6A9700A781BF /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 79037DFB203B6A9700A781BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79037DFE203B6A9700A781BF /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 79037DFD203B6A9700A781BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79037E00203B6A9700A781BF /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 79037DFF203B6A9700A781BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79037E02203B6A9700A781BF /* AFNetworking iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking iOS Tests.xctest";
+			remoteRef = 79037E01203B6A9700A781BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79037E04203B6A9700A781BF /* AFNetworking macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking macOS Tests.xctest";
+			remoteRef = 79037E03203B6A9700A781BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		79037E06203B6A9700A781BF /* AFNetworking tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking tvOS Tests.xctest";
+			remoteRef = 79037E05203B6A9700A781BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79037DB3203B524500A781BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79037DC6203B524500A781BF /* LaunchScreen.storyboard in Resources */,
+				79037DC3203B524500A781BF /* Assets.xcassets in Resources */,
+				79037DBE203B524500A781BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79037DCA203B524500A781BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79037DD5203B524500A781BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		111815C9B8EE649BF203FD40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISS Passes/Pods-ISS Passes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40F7D981118B28ACDB7A63ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISS PassesUITests/Pods-ISS PassesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63559E26AE14DE0F017791DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISS PassesUITests/Pods-ISS PassesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661FDC083D930226BC64EC06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISS PassesTests/Pods-ISS PassesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		734A693FB8B005594591C86B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISS PassesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		775182661E8DB264797C3B72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISS PassesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1255666DC373A7A153986CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISS Passes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB1BFAFED82D6632D9507EDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ISS Passes/Pods-ISS Passes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISS Passes/Pods-ISS Passes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD706CFD1F206CBB31ABD1AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISS PassesTests/Pods-ISS PassesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79037DB1203B524500A781BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79037DBB203B524500A781BF /* ViewController.swift in Sources */,
+				79037DEA203B60B900A781BF /* ServiceCalls.swift in Sources */,
+				79037E15203B741400A781BF /* PassTableViewCell.swift in Sources */,
+				79037E0B203B703E00A781BF /* Global.swift in Sources */,
+				79037E09203B6B1300A781BF /* PassModel.swift in Sources */,
+				79037DC1203B524500A781BF /* ISS_Passes.xcdatamodeld in Sources */,
+				79037DB9203B524500A781BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79037DC8203B524500A781BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79037DD1203B524500A781BF /* ISS_PassesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79037DD3203B524500A781BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79037DDC203B524500A781BF /* ISS_PassesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79037DCE203B524500A781BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79037DB4203B524500A781BF /* ISS Passes */;
+			targetProxy = 79037DCD203B524500A781BF /* PBXContainerItemProxy */;
+		};
+		79037DD9203B524500A781BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79037DB4203B524500A781BF /* ISS Passes */;
+			targetProxy = 79037DD8203B524500A781BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79037DBC203B524500A781BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79037DBD203B524500A781BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79037DC4203B524500A781BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79037DC5203B524500A781BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79037DDE203B524500A781BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79037DDF203B524500A781BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79037DE1203B524500A781BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982AE132FBB0616A786FBC66 /* Pods-ISS Passes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ISS Passes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.us.ISS-Passes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79037DE2203B524500A781BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09BBFC7E9A46BF3E6C00264 /* Pods-ISS Passes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ISS Passes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.us.ISS-Passes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79037DE4203B524500A781BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E18202022D08E202CE4149 /* Pods-ISS PassesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ISS PassesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.us.ISS-PassesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISS Passes.app/ISS Passes";
+			};
+			name = Debug;
+		};
+		79037DE5203B524500A781BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B3F50C45B8E9B9ACEBCAE3 /* Pods-ISS PassesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ISS PassesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.us.ISS-PassesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISS Passes.app/ISS Passes";
+			};
+			name = Release;
+		};
+		79037DE7203B524500A781BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26E64790CD9B1BA46762B5D4 /* Pods-ISS PassesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ISS PassesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.us.ISS-PassesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ISS Passes";
+			};
+			name = Debug;
+		};
+		79037DE8203B524500A781BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82EDEB9E99D5E6920FB4BE5 /* Pods-ISS PassesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ISS PassesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.us.ISS-PassesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ISS Passes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79037DB0203B524500A781BF /* Build configuration list for PBXProject "ISS Passes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79037DDE203B524500A781BF /* Debug */,
+				79037DDF203B524500A781BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79037DE0203B524500A781BF /* Build configuration list for PBXNativeTarget "ISS Passes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79037DE1203B524500A781BF /* Debug */,
+				79037DE2203B524500A781BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79037DE3203B524500A781BF /* Build configuration list for PBXNativeTarget "ISS PassesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79037DE4203B524500A781BF /* Debug */,
+				79037DE5203B524500A781BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79037DE6203B524500A781BF /* Build configuration list for PBXNativeTarget "ISS PassesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79037DE7203B524500A781BF /* Debug */,
+				79037DE8203B524500A781BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79037DBF203B524500A781BF /* ISS_Passes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79037DC0203B524500A781BF /* ISS_Passes.xcdatamodel */,
+			);
+			currentVersion = 79037DC0203B524500A781BF /* ISS_Passes.xcdatamodel */;
+			path = ISS_Passes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 79037DAD203B524500A781BF /* Project object */;
+}
